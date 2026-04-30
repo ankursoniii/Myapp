@@ -2,21 +2,43 @@
 <html>
 <head>
     <title>Siddheshwar Nath Dham</title>
+
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            text-align: center;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             background: linear-gradient(135deg, #ff7e00, #ffcc00);
             color: white;
+            text-align: center;
         }
 
+        /* NAVBAR */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: black;
+            padding: 15px;
+        }
+
+        .navbar a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: orange;
+        }
+
+        /* CONTENT */
         .container {
-            padding: 20px;
+            padding-top: 80px;
         }
 
         h1 {
@@ -28,11 +50,23 @@
             font-size: 18px;
         }
     </style>
+
 </head>
+
 <body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/donate">Donate</a>
+    </div>
+
+    <!-- MAIN CONTENT -->
     <div class="container">
         <h1>🙏 Welcome to Siddheshwar Nath Dham</h1>
         <p>Har Har Mahadev 🔱</p>
     </div>
+
 </body>
 </html>
