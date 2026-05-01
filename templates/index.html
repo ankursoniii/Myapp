@@ -7,12 +7,12 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            height: 100vh;
             background: linear-gradient(135deg, #ff7e00, #ffcc00);
             color: white;
             text-align: center;
         }
 
+        /* NAVBAR */
         .navbar {
             position: fixed;
             top: 0;
@@ -20,7 +20,6 @@
             background: black;
             padding: 15px;
             text-align: center;
-            backdrop-filter: blur(10px);
         }
 
         .navbar a {
@@ -34,13 +33,13 @@
             color: orange;
         }
 
+        /* CONTENT */
         .container {
-            margin-top: 120px;
+            padding-top: 100px;
         }
 
         h1 {
-            font-size: 35px;
-            margin-bottom: 10px;
+            font-size: 32px;
         }
 
         p {
@@ -49,34 +48,49 @@
 
         .btn {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 15px;
             padding: 12px 25px;
             background: white;
             color: black;
             text-decoration: none;
+            border-radius: 6px;
             font-weight: bold;
-            border-radius: 5px;
         }
 
         .btn:hover {
             background: orange;
             color: white;
         }
+
+        .qr {
+            width: 250px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 
 <body>
 
+    <!-- NAVBAR -->
     <div class="navbar">
         <a href="/">Home</a>
         <a href="/about">About</a>
         <a href="/donate">Donate</a>
     </div>
 
+    <!-- MAIN -->
     <div class="container">
+
         <h1>🙏 Shree Siddheshwar Nath Dham</h1>
         <p>Experience Divine Peace & Blessings of Lord Shiva</p>
-<img src="F08FCA7B-4B33-4233-A06B-3F0E081F2119.png" style="width:250px; margin-top:20px; border-radius:10px;">
+
+        <!-- QR IMAGE -->
+        <img src="/F08FCA7B-4B33-4233-A06B-3F0E081F2119.png" class="qr">
+
+<br><br>
+
+<a href="upi://pay?pa=dharm94153284@barodampay&pn=Shree%20Siddheshwar%20Nath%20Dham&am=101&cu=INR" class="btn">
 🙏 ₹101 Donate for Seva
 </a>
 
